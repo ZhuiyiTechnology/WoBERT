@@ -14,8 +14,6 @@ from tqdm import tqdm
 import jieba
 jieba.initialize()
 
-set_gelu('tanh')  # 切换gelu版本
-
 num_classes = 119
 maxlen = 512
 batch_size = 32
