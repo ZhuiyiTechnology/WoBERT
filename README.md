@@ -11,6 +11,11 @@ https://kexue.fm/archives/7758
 
 此外，我们还提供了WoNEZHA，这是基于华为开源的[NEZHA](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/NEZHA-TensorFlow)进行再预训练的，训练细节跟WoBERT基本一样。NEZHA的模型结构跟BERT相似，不同的是它使用了相对位置编码，而BERT用的是绝对位置编码，因此理论上NEZHA能处理的文本长度是无上限的。这里提供以词为单位的WoNEZHA，就是让大家多一个选择。
 
+## 依赖
+```python
+pip install bert4keras==0.8.8
+```
+
 ## 下载
 
 - **WoBERT**: [chinese_wobert_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1BrdFSx9_n1q2uWBiQrpalw), 提取码: kim2
