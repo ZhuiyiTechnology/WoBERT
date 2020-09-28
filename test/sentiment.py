@@ -6,7 +6,7 @@ import numpy as np
 from bert4keras.backend import keras, set_gelu
 from bert4keras.tokenizers import Tokenizer
 from bert4keras.models import build_transformer_model
-from bert4keras.optimizers import Adam, extend_with_piecewise_linear_lr
+from bert4keras.optimizers import Adam
 from bert4keras.snippets import sequence_padding, DataGenerator
 from bert4keras.snippets import open
 from keras.layers import Lambda, Dense
@@ -79,10 +79,6 @@ output = Dense(
 
 model = keras.models.Model(bert.model.input, output)
 model.summary()
-
-# 派生为带分段线性学习率的优化器。
-# 其中name参数可选，但最好填入，以区分不同的派生优化器。
-AdamLR = extend_with_piecewise_linear_lr(Adam, name='AdamLR')
 
 model.compile(
     loss='sparse_categorical_crossentropy',
