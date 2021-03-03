@@ -11,6 +11,8 @@ https://kexue.fm/archives/7758
 
 此外，我们还提供了WoNEZHA，这是基于华为开源的[NEZHA](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/NEZHA-TensorFlow)进行再预训练的，训练细节跟WoBERT基本一样。NEZHA的模型结构跟BERT相似，不同的是它使用了相对位置编码，而BERT用的是绝对位置编码，因此理论上NEZHA能处理的文本长度是无上限的。这里提供以词为单位的WoNEZHA，就是让大家多一个选择。
 
+**2021年03月03日** 新增WoBERT Plus模型，以RoBERTa-wwm-ext为基础，中文MLM式预训练，重新构建词表（比已经开源的WoBERT更完善），30+G语料，maxlen=512，batch_size=256、lr=1e-5训练了25万步（4 * TITAN RTX，累积4步梯度，是之前的WoBERT的4倍），每1000步耗时约1580s，共训练了18天，训练acc约64%，训练loss约1.80。
+
 ## 依赖
 ```bash
 pip install bert4keras==0.8.8
@@ -20,7 +22,8 @@ pip install bert4keras==0.8.8
 
 - **WoBERT**: [chinese_wobert_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1BrdFSx9_n1q2uWBiQrpalw), 提取码: kim2
 - **WoNEZHA**: [chinese_wonezha_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1ABKwUuIiMEEsRXxxlbyKmw), 提取码: qgkq
-
+- **WoBERT<sup>+</sup>**: [chinese_wobert_plus_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1Ltq3ltQsyBCj56zoOOvI9A), 提取码: aedw
+- 
 ## 引用
 
 Bibtex：
