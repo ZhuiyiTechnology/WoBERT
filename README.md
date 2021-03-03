@@ -23,7 +23,7 @@ pip install bert4keras==0.8.8
 - **WoBERT**: [chinese_wobert_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1BrdFSx9_n1q2uWBiQrpalw), 提取码: kim2
 - **WoNEZHA**: [chinese_wonezha_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1ABKwUuIiMEEsRXxxlbyKmw), 提取码: qgkq
 - **WoBERT<sup>+</sup>**: [chinese_wobert_plus_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1Ltq3ltQsyBCj56zoOOvI9A), 提取码: aedw
-- 
+
 ## 引用
 
 Bibtex：
