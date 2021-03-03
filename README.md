@@ -24,6 +24,15 @@ pip install bert4keras==0.8.8
 - **WoNEZHA**: [chinese_wonezha_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1ABKwUuIiMEEsRXxxlbyKmw), 提取码: qgkq
 - **WoBERT<sup>+</sup>**: [chinese_wobert_plus_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1Ltq3ltQsyBCj56zoOOvI9A), 提取码: aedw
 
+## 评测
+
+
+| | IFLYTEK | TNEWS |
+|:--:|:--:|:--:|
+| BERT | 60.31 | 56.94 | 
+| WoBERT | 61.15 | 57.05 |
+| WoBERT Plus | **61.92** | **58.20** |
+
 ## 引用
 
 Bibtex：
